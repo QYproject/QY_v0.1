@@ -14,11 +14,11 @@
         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="搜索" />
         <br />
-        <asp:TextBox ID="TXT1" runat="server" Height="189px" TextMode="MultiLine" Width="492px"></asp:TextBox>
+        <asp:TextBox ID="TXT1" runat="server" Height="189px" TextMode="MultiLine" Width="629px"></asp:TextBox>
         <asp:GridView ID="GridView1" runat="server" Width="270px">
         </asp:GridView>
     
-    </div>
+    </div>    
     </form>
 </body>
 </html>
