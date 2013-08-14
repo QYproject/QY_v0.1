@@ -28,7 +28,7 @@ namespace 青羊教育网络学习平台
             {
                 TXT1.Text += "名称:" + doc.Titile + "   \n";
                 TXT1.Text += "大小:" + doc.Size + "M    \n";
-                TXT1.Text += "类型:" + doc.Type + "   \n\n";
+                TXT1.Text += "类型:" + doc.Format + "   \n\n";
             }
 
             TextBox1.Text = doclist.Count.ToString();

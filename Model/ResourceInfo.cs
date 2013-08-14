@@ -48,12 +48,12 @@ namespace Model
             set { _IsShow = value; }
         }
 
-        private string _Catalog;
+        private CatalogInfo _Catalog;
         /// <summary>
         /// 资源目录
         /// 备注：这个的数据类型应该会改成catalog对象
         /// </summary>
-        public string Catalog
+        public CatalogInfo Catalog
         {
             get { return _Catalog; }
             set { _Catalog = value; }
@@ -74,11 +74,14 @@ namespace Model
         private DateTime _UploadDate;
         /// <summary>
         /// 上传时间
+        /// 把字段封装成只能操作日期，而和时间无关，谢明华于8/15更新
         /// </summary>
         public DateTime UploadDate
         {
-            get { return _UploadDate; }
-            set { _UploadDate = value; }
+            get { return _UploadDate.Date; }
+            set { 
+                _UploadDate = value.Date;               
+            }
         }
 
         private string _ResorceUrl;
@@ -152,6 +155,14 @@ namespace Model
         {
             get { return _Remark; }
             set { _Remark = value; }
+        }
+
+        private bool _IsVideo;
+
+        public bool IsVideo
+        {
+            get { return _IsVideo; }
+            set { _IsVideo = value; }
         }
     }
 }
