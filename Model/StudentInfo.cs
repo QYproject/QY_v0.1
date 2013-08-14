@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 学生类（继承于用户类）
+    /// 作者：杨宇
+    /// 说明：你只写了方法注释，忘了写类的注释
+    /// </summary>
     public class StudentInfo : UserInfo
     {
 
@@ -42,6 +47,7 @@ namespace Model
         private UserType _UType;
         /// <summary>
         /// 用户类型
+        /// student子类规定了usertype，可get不可set，谢明华于8/15更新
         /// </summary>
         new  public UserType UType
         {

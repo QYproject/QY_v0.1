@@ -50,7 +50,7 @@ namespace Model
         new  public int Size
         {
             get { return _Size; }
-            private  set {
+            set {
                // if (value <= Convert.ToInt32(ConfigurationManager.AppSettings["DocMAX"])&&value>0)
                     _Size = value; 
             }
@@ -60,7 +60,7 @@ namespace Model
         /// <summary>
         /// 是否视频
         /// </summary>
-        public bool IsVideo
+        new  public bool IsVideo
         {
             get { return false; }
         }

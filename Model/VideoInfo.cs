@@ -28,10 +28,16 @@ namespace Model
         {
             get { return _Size; }
             set
-            {
-                if (value <= Convert.ToInt32(ConfigurationManager.AppSettings["VideoMAX"]) && value > 0)
-                    _Size = value;
-            }
+            {     _Size = value;  }
+        }
+
+        private bool _IsVideo;
+        /// <summary>
+        /// 是否视频
+        /// </summary>
+        new  public bool IsVideo
+        {
+            get { return true; }
         }
     }
 }

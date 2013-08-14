@@ -14,7 +14,7 @@ namespace Model
     {
         private bool _IsSuper;
         /// <summary>
-        /// 用户等级
+        /// 用户等级，是否超级管理员
         /// </summary>
         public bool IsSuper
         {
@@ -25,6 +25,7 @@ namespace Model
         private UserType _UType;
         /// <summary>
         /// 用户类型
+        /// admin子类规定了usertype，可get不可set，谢明华于8/15更新
         /// </summary>
         new public UserType UType
         {

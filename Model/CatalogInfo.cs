@@ -10,7 +10,7 @@ namespace Model
     /// 目录类
     /// 作者：吴中阳
     /// </summary>
-    class CatalogInfo
+    public  class CatalogInfo
     {
         private int _CatalogID;
         /// <summary>

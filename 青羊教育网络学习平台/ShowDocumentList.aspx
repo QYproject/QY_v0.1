@@ -9,7 +9,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div style="height: 348px">
+    <div style="height: 447px">
     
         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="搜索" />
@@ -17,6 +17,9 @@
         <asp:TextBox ID="TXT1" runat="server" Height="189px" TextMode="MultiLine" Width="629px"></asp:TextBox>
         <asp:GridView ID="GridView1" runat="server" Width="270px">
         </asp:GridView>
+    
+        <asp:Repeater ID="Repeater1" runat="server">
+        </asp:Repeater>
     
     </div>    
     </form>

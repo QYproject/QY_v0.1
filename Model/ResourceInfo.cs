@@ -158,7 +158,9 @@ namespace Model
         }
 
         private bool _IsVideo;
-
+        /// <summary>
+        /// 是否视频
+        /// </summary>
         public bool IsVideo
         {
             get { return _IsVideo; }
