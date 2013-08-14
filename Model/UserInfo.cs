@@ -30,15 +30,15 @@ namespace Model
         }
 
 
-        private UserType _Type;
+        private UserType _UType;
         /// <summary>
         /// 用户类型
         /// 作者：谢明华    8/14日修改
         /// </summary>
-        public UserType Type
+        public UserType UType
         {
-            get { return _Type; }
-            set { _Type = value; }
+            get { return _UType; }
+            set { _UType = value; }
         }
 
         private int _Password;
