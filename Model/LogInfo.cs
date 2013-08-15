@@ -12,11 +12,11 @@ namespace Model
     /// </summary>
     class LogInfo
     {
-        private int _LogID;
+        private string _LogID;
         /// <summary>
         /// 日志ID
         /// </summary>
-        public int LogID
+        public string LogID
         {
             get { return _LogID; }
             set { _LogID = value; }
@@ -33,11 +33,11 @@ namespace Model
         }
 
 
-        private int _ExecutorID;
+        private string _ExecutorID;
         /// <summary>
         /// 操作者
         /// </summary>
-        public int ExecutorID
+        public string ExecutorID
         {
             get { return _ExecutorID; }
             set { _ExecutorID = value; }

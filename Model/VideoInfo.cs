@@ -31,7 +31,7 @@ namespace Model
             {     _Size = value;  }
         }
 
-        private bool _IsVideo;
+        //private bool _IsVideo;
         /// <summary>
         /// 是否视频
         /// </summary>

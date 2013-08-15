@@ -13,6 +13,16 @@ namespace Model
     /// </summary>
     public class StudentInfo : UserInfo
     {
+        private string _TrueName;
+        /// <summary>
+        /// 真实姓名
+        /// </summary>
+        public string TrueName
+        {
+            get { return _TrueName; }
+            set { _TrueName = value; }
+        }
+
 
         private string _School;
         /// <summary>

@@ -13,7 +13,7 @@ namespace Model
         /// 枚举文档资料类型
         /// </summary>
         public enum DocFormat
-        { doc,ppt,pdf,txt}
+        { doc, ppt, pdf, xls, docx, pptx,xlsx }
 
 
         private DocFormat _Format;
@@ -34,8 +34,14 @@ namespace Model
                 this._Format = DocFormat.ppt;
             else if (format.Equals(DocFormat.pdf.ToString()))
                 this._Format = DocFormat.pdf;
-            else if (format.Equals(DocFormat.txt.ToString()))
-                this._Format = DocFormat.txt;
+            else if (format.Equals(DocFormat.xls.ToString()))
+                this._Format = DocFormat.xls;
+            else if (format.Equals(DocFormat.docx.ToString()))
+                this._Format = DocFormat.docx;
+            else if (format.Equals(DocFormat.pptx.ToString()))
+                this._Format = DocFormat.pptx;
+            else if (format.Equals(DocFormat.xlsx.ToString()))
+                this._Format = DocFormat.xlsx;
             else
                 return false;
 
@@ -56,7 +62,7 @@ namespace Model
             }
         }
 
-        private bool _IsVideo;
+        //private bool _IsVideo;
         /// <summary>
         /// 是否视频
         /// </summary>

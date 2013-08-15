@@ -12,22 +12,22 @@ namespace Model
     /// </summary>
     public class ReportInfo
     {
-        private int _ReportInfoID;
+        private string _ReportInfoID;
         /// <summary>
         /// 报告信息ID
         /// </summary>
 
-        public int ReportInfoID
+        public string ReportInfoID
         {
             get { return _ReportInfoID; }
             set { _ReportInfoID = value; }
         }
 
-        private int _ResourceID;
+        private string _ResourceID;
         /// <summary>
         /// 资源ID
         /// </summary>
-        public int ResourceID
+        public string ResourceID
         {
             get { return _ResourceID; }
             set { _ResourceID = value; }

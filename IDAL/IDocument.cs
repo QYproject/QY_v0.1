@@ -9,6 +9,8 @@ namespace IDAL
 {
      public interface IDocument
     {
-         List<DocumentInfo> GetDocumentByName(string ID);
+         List<DocumentInfo> GetDocumentByCatalog(CatalogInfo catalog);
+         List<DocumentInfo> GetDocumentByName(string name);
+         DocumentInfo GetDocumentByID(string ID);
     }
 }

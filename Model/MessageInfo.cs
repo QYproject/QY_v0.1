@@ -12,31 +12,31 @@ namespace Model
     /// </summary>
     public class MessageInfo
     {
-        private int _MessageID;
+        private string _MessageID;
         /// <summary>
         /// 信息ID
         /// </summary>
-        public int MessageID
+        public string MessageID
         {
             get { return _MessageID; }
             set { _MessageID = value; }
         }
 
-        private int _TeacherID;
+        private string _TeacherID;
         /// <summary>
         /// 老师ID
         /// </summary>
-        public int TeacherID
+        public string TeacherID
         {
             get { return _TeacherID; }
             set { _TeacherID = value; }
         }
 
-        private int _StudentID;
+        private string _StudentID;
         /// <summary>
         /// 学生
         /// </summary>
-        public int StudentID
+        public string StudentID
         {
             get { return _StudentID; }
             set { _StudentID = value; }

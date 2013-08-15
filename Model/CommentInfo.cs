@@ -8,33 +8,33 @@ namespace Model
 {
     public  class CommentInfo
     {
-        private int _ID;
+        private string _ID;
         /// <summary>
         /// 该评论ID
         /// </summary>
-        public int ID
+        public string ID
         {
             get { return _ID; }
             set { _ID = value; }
         }
 
 
-        private int _ResourceID;
+        private string _ResourceID;
         /// <summary>
         /// 被评论的资源ID
         /// </summary>
-        public int ResourceID
+        public string ResourceID
         {
             get { return _ResourceID; }
             set { _ResourceID = value; }
         }
 
 
-        private int _UserID;
+        private string _UserID;
         /// <summary>
         /// 评论者ID
         /// </summary>
-        public int UserID
+        public string UserID
         {
             get { return _UserID; }
             set { _UserID = value; }

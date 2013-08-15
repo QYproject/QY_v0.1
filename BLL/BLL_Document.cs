@@ -22,9 +22,11 @@ namespace BLL
             }
         }
 
-        public List<DocumentInfo> GetDocumentByID(string name)
+        public List<DocumentInfo> GetDocumentByName(string name)
         {
             return documentDal.GetDocumentByName(name);
         }
+
+
     }
 }

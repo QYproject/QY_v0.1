@@ -19,11 +19,11 @@ namespace Model
     /// </summary>
     public  class UserInfo
     {
-        private int _UserID;
+        private string _UserID;
         /// <summary>
         /// 用户编号
         /// </summary>
-        public int UserID
+        public string UserID
         {
             get { return _UserID; }
             set { _UserID = value; }
@@ -41,11 +41,11 @@ namespace Model
             set { _UType = value; }
         }
 
-        private int _Password;
+        private string _Password;
         /// <summary>
-        /// 密码编号
+        /// 密码
         /// </summary>
-        public int Password
+        public string Password
         {
             get { return _Password; }
             set { _Password = value; }

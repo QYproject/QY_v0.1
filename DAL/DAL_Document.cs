@@ -27,14 +27,25 @@ namespace DAL
                 while(reader.Read())
                 {
                     DocumentInfo Doc  = new DocumentInfo();
-                    Doc.ID = Convert.ToInt32(reader["ResourceID"]);
-                    Doc.Titile = Convert.ToString(reader["Name"]);
+                    Doc.ID = Convert.ToString(reader["ResourceID"]);
+                    Doc.Title = Convert.ToString(reader["Name"]);
                     Doc.Size = Convert.ToInt32(reader["Size"]);
                    // Doc.Type = Convert.ToString(reader["Type"]);   
+                    Doc.setFormat(Convert.ToString(reader["Type"]));
                     Doclist.Add(Doc);
                 }
                 return Doclist;
             }
+        }
+
+        public List<DocumentInfo> GetDocumentByCatalog(CatalogInfo catalog)
+        {
+            throw new NotImplementedException();
+        }
+
+        public DocumentInfo GetDocumentByID(string ID)
+        {
+            throw new NotImplementedException();
         }
     }
 }

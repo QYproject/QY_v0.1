@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Main.aspx" />
+    <Content Include="ShowDocumentDetail.aspx" />
     <Content Include="ShowDocumentList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -70,6 +71,13 @@
       <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowDocumentDetail.aspx.cs">
+      <DependentUpon>ShowDocumentDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowDocumentDetail.aspx.designer.cs">
+      <DependentUpon>ShowDocumentDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ShowDocumentList.aspx.cs">
       <DependentUpon>ShowDocumentList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

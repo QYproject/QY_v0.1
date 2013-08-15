@@ -22,11 +22,11 @@ namespace Model
             set { _TeacherName = value; }
         }
 
-        private int _TeacherID;
+        private string _TeacherID;
         /// <summary>
         /// 老师ID
         /// </summary>
-        public int TeacherID
+        public string TeacherID
         {
             get { return _TeacherID; }
             set { _TeacherID = value; }

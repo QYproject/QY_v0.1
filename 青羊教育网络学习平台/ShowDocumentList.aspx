@@ -14,8 +14,21 @@
         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="搜索" />
         <br />
-        <asp:TextBox ID="TXT1" runat="server" Height="189px" TextMode="MultiLine" Width="629px"></asp:TextBox>
-        <asp:GridView ID="GridView1" runat="server" Width="270px">
+        <asp:TextBox ID="TXT1" runat="server" Height="21px" TextMode="MultiLine" Width="629px"></asp:TextBox>
+        <asp:GridView ID="GridView1" runat="server" Width="625px" AllowPaging="True" AutoGenerateColumns="False" BackColor="#F4F4FF" BorderColor="White" BorderStyle="None" OnPageIndexChanging="GridView1_PageIndexChanging" PageSize="7">
+            <Columns>
+                <asp:TemplateField HeaderText="资源名称">
+                    <ItemTemplate>
+                        <a href="ShowDocumentDetail.aspx?ID=<%#Eval("ID")%> "><%#Eval("Title")%> </a>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:BoundField DataField="Size" HeaderText="资料大小" />
+
+                <asp:BoundField DataField="Format" HeaderText="格式" />
+                <asp:ButtonField DataTextField="Title" />
+                <asp:CommandField />
+            </Columns>
+            <PagerStyle BackColor="#CCCCFF" />
         </asp:GridView>
     
         <asp:Repeater ID="Repeater1" runat="server">

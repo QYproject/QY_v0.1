@@ -8,11 +8,11 @@ namespace Model
 {
     public class ResourceInfo
     {
-        private int _ID;
+        private string _ID;
         /// <summary>
         /// 资源ID
         /// </summary>
-        public int ID
+        public string ID
         {
             get { return _ID; }
             set { _ID = value; }
@@ -22,7 +22,7 @@ namespace Model
         /// <summary>
         /// 资源名称
         /// </summary>
-        public string Titile
+        public string Title
         {
             get { return _Title; }
             set { _Title = value; }
@@ -60,11 +60,11 @@ namespace Model
         }
 
 
-        private int _CreatorID;
+        private string _CreatorID;
         /// <summary>
         /// 创建者/上传者 ID
         /// </summary>
-        public int CreatorID
+        public string CreatorID
         {
             get { return _CreatorID; }
             set { _CreatorID = value; }
